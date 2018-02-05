@@ -1,0 +1,9 @@
+<view>
+  <button type='primary' bindtap="place">下单</button>
+</view>
+<view>
+  <button type='primary' bindtap="pay">预支付</button>
+</view>
+<view>
+  <button type='primary' bindtap="refund">退款</button>
+</view>

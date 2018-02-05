@@ -5,13 +5,7 @@
   <button type='primary'bindtap="getToken">申请令牌</button>
 </view>
 <view>
-  <button type='primary' bindtap="place">下单</button>
-</view>
-<view>
-  <button type='primary' bindtap="pay">预支付</button>
-</view>
-<view>
-  <button type='primary' bindtap="refund">退款</button>
+  <button type='primary' bindtap="goPlace">支付模块</button>
 </view>
 <view>
   <button type='primary' bindtap="goTemplate">模板</button>

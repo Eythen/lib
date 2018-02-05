@@ -41,86 +41,12 @@ Page({
     });
   },
 
-  place:function(){
-    // var goods = new Array();
-    // goods['goods_id'] = 99;
-    // goods['goods_num'] = 1;
-    var goods = [
-      {
-      'goods_id': 99,
-      'goods_num':1,
-      },
-      {
-        'goods_id': 98,
-        'goods_num': 1,
-      }
-    ]
-    wx.request({
-      url:'https://m.septfarm.com/api/order/place',
-      method: 'POST',
-      data: {
-        'address_id': 37,
-        'goods': goods,
-      },
-      header: {
-        'content-type': 'application/json',
-        'token': wx.getStorageSync('token'),
-      },
-      success: function (res) {
-        console.log(res);
-      }
+  goPlace:function(){
+    wx.navigateTo({
+      url: '../pay/pay',
     })
   },
-
-  pay:function(){
-    wx.request({
-      url: 'https://m.septfarm.com/api/pay/pre_order',
-      method: 'POST',
-      data: {
-        'id': 211,
-      },
-      header: {
-        'content-type': 'application/json',
-        'token': wx.getStorageSync('token'),
-      },
-      success: function (res) {
-        console.log(res.data);
-        wx.requestPayment({
-          'timeStamp': res.data.timeStamp,
-          'nonceStr': res.data.nonceStr,
-          'package': res.data.package,
-          'signType': 'MD5',
-          'paySign': res.data.paySign,
-          'success': function (res) {
-            console.log(res);
-          },
-          'fail': function (res) {
-            console.log(res);
-          }
-        })
-      }
-    })
-  },
-  refund: function () {
-    var that = this;
-    wx.login({
-      success: function (res) {
-        wx.request({
-          url: 'https://m.septfarm.com/api/pay/refund',
-          method: 'POST',
-          data: { "order_id": 211 },
-          header: {
-            'content-type': 'application/json',
-            'token': wx.getStorageSync('token'),
-          },
-          success: function (res) {
-            console.log(res.data);
-            wx.setStorageSync('token', res.data.token);
-          }
-        })
-      }
-    });
-  },
+  
   goTemplate:function(){
     wx.navigateTo({
       url: '../template/index'

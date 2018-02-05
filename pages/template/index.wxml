@@ -17,8 +17,8 @@
   <view>
     <input name="note" placeholder="备注" />
   </view>
-  <view class="btn-area">
-    <button formType="submit">Submit</button>
-    <button formType="reset">Reset</button>
+  <view>
+    <button type='primary' formType="submit">Submit</button>
+    <button type='primary' formType="reset">Reset</button>
   </view>
 </form>

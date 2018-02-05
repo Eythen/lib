@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/template/index",
+    "pages/pay/pay",
     "pages/logs/logs"
   ],
   "window":{
