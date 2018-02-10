@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/template/index",
     "pages/pay/pay",
+    "pages/file/index",
     "pages/logs/logs"
   ],
   "window":{

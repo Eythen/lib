@@ -5,8 +5,14 @@
   <button type='primary'bindtap="getToken">申请令牌</button>
 </view>
 <view>
-  <button type='primary' bindtap="goPlace">支付模块</button>
+  <button type='primary' bindtap="goPlace">支付</button>
 </view>
 <view>
   <button type='primary' bindtap="goTemplate">模板</button>
+</view>
+<view>
+  <button type='primary' bindtap="goFile">文件</button>
+</view>
+<view>
+  <button type='primary' bindtap="goFile">socket</button>
 </view>

@@ -52,6 +52,12 @@ Page({
       url: '../template/index'
     })
   },
+
+  goFile:function(){
+    wx.navigateTo({
+      url: '../file/index',
+    })
+  },
   
   /**
    * 生命周期函数--监听页面初次渲染完成

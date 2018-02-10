@@ -31,6 +31,12 @@
 					"name": "template",
 					"pathName": "pages/template/index",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "文件",
+					"pathName": "pages/file/index",
+					"query": ""
 				}
 			]
 		}
