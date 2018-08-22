@@ -26,9 +26,13 @@ Page({
     wx.login({
       success: function (res) {
         wx.request({
-          url:'http://farm.com/api/token/user',
+          // url:'https://m.septfarm.com/api/token/user',
+          url: 'http://farm.com/api/token/user',
           method:'POST',
-          data:{"code":res.code},
+          data:{
+            "code":res.code,
+            "type":"2",
+            },
           header: {
             'content-type': 'application/json'
           },

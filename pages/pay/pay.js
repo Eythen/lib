@@ -14,22 +14,20 @@ Page({
     
   },
   place: function () {
-    var goods = [
+    var pigs = [
       {
-        'goods_id': 99,
-        'goods_num': 1,
+        'pig_id':24,
       },
-      {
-        'goods_id': 98,
-        'goods_num': 1,
-      }
     ]
     wx.request({
-      url: 'https://m.septfarm.com/api/order/place',
+      url: 'https://m.septfarm.com/api/pig/place',
       method: 'POST',
       data: {
-        'address_id': 37,
-        'goods': goods,
+        'consign': 1,
+        'name':'爱迪生',
+        'mobile':'13176545673',
+        'partition':'整猪分割',
+        'pigs': pigs,
       },
       header: {
         'content-type': 'application/json',
@@ -46,7 +44,8 @@ Page({
       url: 'https://m.septfarm.com/api/pay/pre_order',
       method: 'POST',
       data: {
-        'id': 211,
+        'id': 8,
+        'type':3,
       },
       header: {
         'content-type': 'application/json',
@@ -78,7 +77,7 @@ Page({
         wx.request({
           url: 'https://m.septfarm.com/api/pay/refund',
           method: 'POST',
-          data: { "order_id": 211 },
+          data: { "order_id": 8 },
           header: {
             'content-type': 'application/json',
             'token': wx.getStorageSync('token'),

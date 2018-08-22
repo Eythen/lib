@@ -7,9 +7,29 @@
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "工具",
+    "backgroundColor":"#eeeeee",
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+    "color":"#a3a3a3",
+    "selectedColor":"#20c3ff",
+    "backgroundColor":"#eeeeee",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "令牌",
+        "iconPath":"pages/img/u.png",
+        "selectedIconPath":"pages/img/uu.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
   }
 }

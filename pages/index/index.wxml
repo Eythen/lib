@@ -2,7 +2,7 @@
   <button type='primary' bindtap="getCode">申请code</button>
 </view>
 <view>
-  <button type='primary'bindtap="getToken">申请令牌</button>
+  <button type='primary' bindtap="getToken">申请令牌</button>
 </view>
 <view>
   <button type='primary' bindtap="goPlace">支付</button>
@@ -15,4 +15,7 @@
 </view>
 <view>
   <button type='primary' bindtap="goFile">socket</button>
+</view>
+<view>
+  <button type='primary' open-type="contact">进入客服会话</button>
 </view>

@@ -8,9 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.6.6",
-	"appid": "wxb26e224b2bae228a",
-	"projectname": "%E5%95%86%E5%9F%8E",
+	"libVersion": "2.2.2",
+	"appid": "wx77d6ac5fad518c1e",
+	"projectname": "%E8%AE%A4%E5%85%BB",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -24,7 +24,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -36,6 +36,12 @@
 					"id": -1,
 					"name": "文件",
 					"pathName": "pages/file/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "pages/pay/pay",
 					"query": ""
 				}
 			]
